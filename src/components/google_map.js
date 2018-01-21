@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // Google map intergration
+// Aready included the google map js file in index.html
 class GoogleMap extends Component {
 
   // one of lifecycle methods that gets called automatically 
@@ -17,7 +18,10 @@ class GoogleMap extends Component {
   }
   
   render() {
-    // this.refs.map
+    // the ref in the div use the ref system in react, it allow us to get a reference,
+    // a direct reference to an HTML element that has been rendered to the page.
+    // this.refs.map (anywhere else in this component, this.refs.map and 
+    // it will return a direct reference to this <div ref="map"> HTML element).
     return <div ref="map" />
   }
 
